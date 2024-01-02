@@ -12,6 +12,63 @@
         <span>write span and enter</span>
     </ul>
 
+<span id="id"> writting 'span#id' and Enter, it creates span id="id" </span>
+<div class="class1 class2" id="id-1">this one was created by just typing
+    'class1.class2#id-1' (it assumes i want a div)
+</div>
+<link rel="stylesheet" href=""> Only link and enter adds link rel stylehseet, etc.
+<button>created by just writting 'button' and then enter</button>
+<div class="purple"><span class="cyan"> just wrote 'div.purple>span.cyan' </span></div>
+<header>
+    <nav>
+        <ul>'header>nav>ul*3</ul>
+    </nav>
+</header>
+
+<ul>
+    <li>asd</li>
+    <li>asd</li>
+    <li>asd</li>
+</ul> 'ul>li*3{asd}'
+
+<ul>
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+</ul> 'ul>li*3{List Item $}' can use $$ to have two numeber (01,02...11)
+
+
+'header+main+footer' they are siblings instead of child
+<header></header>
+<main></main>
+<footer></footer>
+
+
+below is done by '(header>nav)+main+footer' like mathematics to make parent / sibling relationship
+<header>
+    <nav></nav>
+</header>
+<main></main>
+<footer></footer>
+
+
+below: 'form:post'
+<form action="" method="post"></form>
+
+below: 'form:post>.group>input:text'
+<form action="" method="post">
+    <div class="group"><input type="text" name="" id=""></div>
+</form>
+
+
+below: form:post>(.group>input:text)(.group>label+input:number)
+
+<form action="" method="post">
+    <div class="group"><input type="text" name="" id=""></div>
+    <div class="group"><label for=""></label><input type="number" name="" id=""></div>
+</form>
+
+
 
 </body>
 </html>

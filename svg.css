@@ -1,0 +1,12 @@
+.container {
+    max-width: 200px;
+    margin: auto;
+  }
+  
+  .svg-circle:hover + .svg-text-group {
+    opacity: 1;
+  }
+  
+  .svg-circle{
+  fill:white;
+  }
